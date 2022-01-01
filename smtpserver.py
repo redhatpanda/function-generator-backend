@@ -13,11 +13,11 @@ def sendSineEmail(email):
         img_data = f.read()
 
     msg = MIMEMultipart()
-    msg['Subject'] = 'Test Email'
+    msg['Subject'] = 'Sine Wave Generated'
     msg['From'] = fromaddr
     msg['To'] = toaddr
 
-    text = MIMEText("This is a test email from the backend.")
+    text = MIMEText("Please find the generated Waveform attached.")
     msg.attach(text)
     image = MIMEImage(img_data, name=os.path.basename('sine_wave.png'))
     msg.attach(image)
@@ -39,11 +39,11 @@ def sendSqaureEmail(email):
         img_data = f.read()
 
     msg = MIMEMultipart()
-    msg['Subject'] = 'Test Email'
+    msg['Subject'] = 'Square Wave Generated'
     msg['From'] = fromaddr
     msg['To'] = toaddr
 
-    text = MIMEText("This is a test email from the backend.")
+    text = MIMEText("Please find the generated Waveform attached.")
     msg.attach(text)
     image = MIMEImage(img_data, name=os.path.basename('square_wave.png'))
     msg.attach(image)
@@ -65,11 +65,11 @@ def sendSawtoothEmail(email):
         img_data = f.read()
 
     msg = MIMEMultipart()
-    msg['Subject'] = 'Test Email'
+    msg['Subject'] = 'Sawtooth Wave Generated'
     msg['From'] = fromaddr
     msg['To'] = toaddr
 
-    text = MIMEText("This is a test email from the backend.")
+    text = MIMEText("Please find the generated Waveform attached.")
     msg.attach(text)
     image = MIMEImage(img_data, name=os.path.basename('sawtooth_wave.png'))
     msg.attach(image)
@@ -91,11 +91,11 @@ def sendTriangleEmail(email):
         img_data = f.read()
 
     msg = MIMEMultipart()
-    msg['Subject'] = 'Test Email'
+    msg['Subject'] = 'Triangle Wave Generated'
     msg['From'] = fromaddr
     msg['To'] = toaddr
 
-    text = MIMEText("This is a test email from the backend.")
+    text = MIMEText("Please find the generated Waveform attached.")
     msg.attach(text)
     image = MIMEImage(img_data, name=os.path.basename('triangle_wave.png'))
     msg.attach(image)
@@ -117,11 +117,11 @@ def sendFourierEmail(email):
         img_data = f.read()
 
     msg = MIMEMultipart()
-    msg['Subject'] = 'Test Email'
+    msg['Subject'] = 'Fourier Series Generated'
     msg['From'] = fromaddr
     msg['To'] = toaddr
 
-    text = MIMEText("This is a test email from the backend.")
+    text = MIMEText("Please find the generated Waveform attached.")
     msg.attach(text)
     image = MIMEImage(img_data, name=os.path.basename('fourier_series.png'))
     msg.attach(image)
